@@ -13,12 +13,18 @@ namespace DroneLander
 {
 	public partial class App : Application
 	{
-
         public static MainViewModel ViewModel { get; set; }
-        
+
+        public static Services.IAuthenticationService Authenticator { get; private set; }
+
+        public static void InitializeAuthentication(Services.IAuthenticationService authenticator)
+        {
+            Authenticator = authenticator;
+        }
+
         public App ()
 		{
-			InitializeComponent();//sadfvbf
+			InitializeComponent();
 
             MainPage = new NavigationPage(new DroneLander.MainPage());
         }

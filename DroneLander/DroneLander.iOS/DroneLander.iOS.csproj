@@ -143,12 +143,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\DroneLander\DroneLander.csproj">
-      <Project>{7653817F-C0D4-4822-805A-BDBC92EB40BD}</Project>
-      <Name>DroneLander</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\drone_lander_back.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -156,5 +150,11 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Sounds\engine.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DroneLander\DroneLander.csproj">
+      <Project>{406e6941-62aa-45d7-b60b-0e184895f05d}</Project>
+      <Name>DroneLander</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
